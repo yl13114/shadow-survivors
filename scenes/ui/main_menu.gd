@@ -7,6 +7,7 @@ var options_scene = preload("res://scenes/ui/options_menu.tscn")
 func _ready():
 	%PlayButton.pressed.connect(on_play_pressed)
 	%UpgradesButton.pressed.connect(on_upgrades_pressed)
+	%GoldUpgradesButton.pressed.connect(on_gold_upgrades_pressed)
 	%OptionsButton.pressed.connect(on_options_pressed)
 	%QuitButton.pressed.connect(on_quit_pressed)
 
@@ -21,6 +22,12 @@ func on_upgrades_pressed():
 	ScreenTransition.transition()
 	await ScreenTransition.transitioned_halfway
 	get_tree().change_scene_to_file("res://scenes/ui/meta_menu.tscn")
+
+
+func on_gold_upgrades_pressed():
+	ScreenTransition.transition()
+	await ScreenTransition.transitioned_halfway
+	get_tree().change_scene_to_file("res://scenes/ui/gold_upgrade_menu.tscn")
 
 
 func on_options_pressed():

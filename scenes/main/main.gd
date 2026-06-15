@@ -8,6 +8,25 @@ var paused_menu_scene = preload("res://scenes/ui/pause_menu.tscn")
 
 func _ready():
 	%Player.health_component.died.connect(on_player_died)
+	apply_meta_bonuses()
+
+
+func apply_meta_bonuses():
+	var bonuses = MetaProgression.get_stat_bonuses()
+	var player = %Player
+
+	# Apply max health
+	if bonuses["max_health"] > 0:
+		player.health_component.max_health = 10 + bonuses["max_health"]
+		player.health_component.current_health = player.health_component.max_health
+
+	# Apply move speed
+	if bonuses["move_speed"] > 1.0:
+		player.velocity_component.max_speed = player.base_speed * bonuses["move_speed"]
+
+	# Apply armor (damage reduction)
+	if bonuses["armor"] > 0:
+		player.armor = bonuses["armor"]
 
 
 

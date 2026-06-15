@@ -27,4 +27,6 @@ func increment_experience(number: float):
 
 
 func on_experience_vial_collected(number: float):
-	increment_experience(number)
+	var bonuses = MetaProgression.get_stat_bonuses()
+	var modified_number = number * bonuses["exp_gain"]
+	increment_experience(modified_number)

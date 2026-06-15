@@ -16,6 +16,7 @@ var number_colliding_bodies := 0
 var base_speed := 0
 var touch_position := Vector2.ZERO
 var is_touching := false
+var armor := 0
 
 
 func _ready():
@@ -73,10 +74,10 @@ func get_movement_vector():
 func check_deal_damage():
 	if number_colliding_bodies == 0 || !damage_interval_timer.is_stopped():
 		return
-	
-	health_component.damage(1)
+
+	var damage = max(1 - armor, 0)
+	health_component.damage(damage)
 	damage_interval_timer.start()
-	print(health_component.current_health)
 
 
 func update_health_display():

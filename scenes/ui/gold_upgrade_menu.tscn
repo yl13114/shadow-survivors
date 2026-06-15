@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/gold_upgrade_menu.gd" id="1_abc"]
+[ext_resource type="TileSet" uid="uid://b6us1ivpw5jq2" path="res://resources/tileset.tres" id="2_def"]
+[ext_resource type="PackedScene" uid="uid://bayyc7rvlabst" path="res://scenes/ui/gold_upgrade_card.tscn" id="3_ghi"]
+[ext_resource type="PackedScene" uid="uid://gisddfn8bqx" path="res://scenes/ui/vignette.tscn" id="4_jkl"]
+
+[node name="GoldUpgradeMenu" type="CanvasLayer"]
+layer = 2
+script = ExtResource("1_abc")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_def")
+format = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HeaderHBox" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer/HeaderHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 24
+text = "Permanent Upgrades"
+
+[node name="GoldLabel" type="Label" parent="MarginContainer/VBoxContainer/HeaderHBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 20
+text = "0 G"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 2
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(50, 0)
+size_flags_horizontal = 0
+text = "Back"
+
+[node name="Vignette" parent="." instance=ExtResource("4_jkl")]
+layer = 3

@@ -1,0 +1,64 @@
+{
+  "upgrades": [
+    {
+      "id": "max_health",
+      "title": "Health Up",
+      "description": "+10 Maximum Health",
+      "stat": "max_health",
+      "value_per_level": 10,
+      "max_level": 20,
+      "base_cost": 100,
+      "cost_per_level": 100
+    },
+    {
+      "id": "attack_power",
+      "title": "Attack Up",
+      "description": "+5% Damage",
+      "stat": "attack_power",
+      "value_per_level": 0.05,
+      "max_level": 20,
+      "base_cost": 150,
+      "cost_per_level": 150
+    },
+    {
+      "id": "move_speed",
+      "title": "Speed Up",
+      "description": "+3% Movement Speed",
+      "stat": "move_speed",
+      "value_per_level": 0.03,
+      "max_level": 15,
+      "base_cost": 120,
+      "cost_per_level": 120
+    },
+    {
+      "id": "exp_gain",
+      "title": "EXP Up",
+      "description": "+5% Experience Gain",
+      "stat": "exp_gain",
+      "value_per_level": 0.05,
+      "max_level": 15,
+      "base_cost": 200,
+      "cost_per_level": 200
+    },
+    {
+      "id": "gold_gain",
+      "title": "Gold Up",
+      "description": "+5% Gold Gain",
+      "stat": "gold_gain",
+      "value_per_level": 0.05,
+      "max_level": 15,
+      "base_cost": 180,
+      "cost_per_level": 180
+    },
+    {
+      "id": "armor",
+      "title": "Armor Up",
+      "description": "+1 Armor",
+      "stat": "armor",
+      "value_per_level": 1,
+      "max_level": 10,
+      "base_cost": 250,
+      "cost_per_level": 250
+    }
+  ]
+}
