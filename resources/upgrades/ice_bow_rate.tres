@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityUpgrade" load_steps=2 format=3 uid="uid://a5b6c7d8e9f0a1b2"]
+
+[ext_resource type="Script" path="res://resources/upgrades/ability_upgrade.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "ice_bow_rate"
+max_quantity = 5
+name = "Ice Bow Speed"
+description = "Increases ice bow attack rate by 10%."
