@@ -14,6 +14,8 @@ const ACCELERATION_SMOOTHING = 25
 
 var number_colliding_bodies := 0
 var base_speed := 0
+var touch_position := Vector2.ZERO
+var is_touching := false
 
 
 func _ready():
@@ -43,9 +45,27 @@ func _process(delta):
 		visuals.scale = Vector2(move_sign, 1)
 
 
-func get_movement_vector():	
+func _input(event: InputEvent):
+	if event is InputEventScreenTouch:
+		if event.pressed:
+			touch_position = event.position
+			is_touching = true
+		else:
+			is_touching = false
+	elif event is InputEventScreenDrag:
+		touch_position = event.position
+
+
+func get_movement_vector():
 	var x_movement = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	var y_movement = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
+	
+	if is_touching:
+		var camera = get_viewport().get_camera_2d()
+		if camera:
+			var world_touch = touch_position + camera.get_screen_center_position() - get_viewport_rect().size / 2
+			var direction_to_touch = (world_touch - global_position).normalized()
+			return direction_to_touch
 	
 	return Vector2(x_movement, y_movement)
 
