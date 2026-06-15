@@ -1,0 +1,21 @@
+{
+  "characters": [
+    {
+      "id": "knight",
+      "name": "Shadow Knight",
+      "description": "A fallen warrior risen from the abyss. Wields a cursed blade and heavy armor.",
+      "stats": {
+        "max_health": 120,
+        "move_speed": 120,
+        "armor": 5,
+        "damage_multiplier": 1.0
+      },
+      "starting_weapon": "shadow_blade",
+      "starting_ability": null,
+      "sprite_path": "res://assets/characters/knight/",
+      "portrait_path": "res://assets/characters/knight/portrait.png",
+      "unlocked": true,
+      "unlock_condition": null
+    }
+  ]
+}
