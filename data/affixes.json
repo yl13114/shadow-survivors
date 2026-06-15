@@ -1,0 +1,149 @@
+{
+  "crit_rate": {
+    "name": "Sharp Edge",
+    "description": "+15% Critical Hit Rate",
+    "type": "crit_rate",
+    "value": 0.15,
+    "category": "offensive"
+  },
+  "crit_damage": {
+    "name": "Devastating Blow",
+    "description": "+20% Critical Damage",
+    "type": "crit_damage",
+    "value": 0.20,
+    "category": "offensive"
+  },
+  "attack_speed": {
+    "name": "Swift Strikes",
+    "description": "+10% Attack Speed",
+    "type": "attack_speed",
+    "value": 0.10,
+    "category": "offensive"
+  },
+  "elemental_damage": {
+    "name": "Elemental Mastery",
+    "description": "+15% Elemental Damage",
+    "type": "damage_multiplier",
+    "value": 0.15,
+    "category": "offensive"
+  },
+  "life_on_kill": {
+    "name": "Vampiric Touch",
+    "description": "Recover 5 Health on Kill",
+    "type": "life_on_kill",
+    "value": 5.0,
+    "category": "offensive"
+  },
+  "tracking_projectile": {
+    "name": "Homing Shot",
+    "description": "Fire a tracking projectile every 5 seconds",
+    "type": "tracking_projectile",
+    "value": 5.0,
+    "category": "offensive"
+  },
+  "move_speed": {
+    "name": "Swift Feet",
+    "description": "+10% Movement Speed",
+    "type": "move_speed_bonus",
+    "value": 0.10,
+    "category": "defensive"
+  },
+  "max_health": {
+    "name": "Vitality",
+    "description": "+20 Maximum Health",
+    "type": "max_health_bonus",
+    "value": 20.0,
+    "category": "defensive"
+  },
+  "armor": {
+    "name": "Iron Skin",
+    "description": "+5 Armor",
+    "type": "armor_bonus",
+    "value": 5.0,
+    "category": "defensive"
+  },
+  "dodge_chance": {
+    "name": "Phantom Step",
+    "description": "20% chance to become invincible for 1 second when hit",
+    "type": "dodge_chance",
+    "value": 0.20,
+    "category": "defensive"
+  },
+  "low_health_damage": {
+    "name": "Berserker Rage",
+    "description": "Double damage when health is below 30%",
+    "type": "berserker_damage",
+    "value": 2.0,
+    "category": "defensive"
+  },
+  "exp_bonus": {
+    "name": "Scholar",
+    "description": "+20% Experience Gain",
+    "type": "exp_bonus",
+    "value": 0.20,
+    "category": "utility"
+  },
+  "gold_bonus": {
+    "name": "Prosperity",
+    "description": "+15% Gold Gain",
+    "type": "gold_bonus",
+    "value": 0.15,
+    "category": "utility"
+  },
+  "pickup_range": {
+    "name": "Magnetism",
+    "description": "+10% Item Pickup Range",
+    "type": "pickup_range",
+    "value": 0.10,
+    "category": "utility"
+  },
+  "chest_drop_rate": {
+    "name": "Fortune",
+    "description": "+5% Chest Drop Rate",
+    "type": "chest_drop_rate",
+    "value": 0.05,
+    "category": "utility"
+  },
+  "exp_on_kill": {
+    "name": "Knowledge Thief",
+    "description": "5% chance to drop extra experience on kill",
+    "type": "exp_on_kill",
+    "value": 0.05,
+    "category": "utility"
+  },
+  "fire_damage": {
+    "name": "Inferno",
+    "description": "Fire damage +25%",
+    "type": "fire_damage",
+    "value": 0.25,
+    "category": "elemental"
+  },
+  "ice_freeze": {
+    "name": "Permafrost",
+    "description": "Ice freeze duration +1 second",
+    "type": "ice_freeze_duration",
+    "value": 1.0,
+    "category": "elemental"
+  },
+  "lightning_chain": {
+    "name": "Chain Lightning",
+    "description": "Lightning chain +1 target",
+    "type": "lightning_chain",
+    "value": 1,
+    "category": "elemental"
+  },
+  "dark_lifesteal": {
+    "name": "Shadow Siphon",
+    "description": "Dark damage lifesteal +5%",
+    "type": "dark_lifesteal",
+    "value": 0.05,
+    "category": "elemental"
+  },
+  "light_shield": {
+    "name": "Divine Shield",
+    "description": "Light shield +10%",
+    "type": "light_shield",
+    "value": 0.10,
+    "category": "elemental"
+  }
+}

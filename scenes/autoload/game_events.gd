@@ -3,6 +3,7 @@ extends Node
 signal experience_vial_collected(number: float)
 signal ability_upgrade_added(upgrade: AbilityUpgrade, current_upgrades: Dictionary)
 signal player_damaged
+signal equipment_changed(slot: int, item: Dictionary)
 
 
 func emit_experience_vial_collected(number: float):
@@ -15,3 +16,7 @@ func emit_ability_upgrade_added(upgrade: AbilityUpgrade, current_upgrades: Dicti
 
 func emit_player_damaged():
 	player_damaged.emit()
+
+
+func emit_equipment_changed(slot: int, item: Dictionary):
+	equipment_changed.emit(slot, item)
