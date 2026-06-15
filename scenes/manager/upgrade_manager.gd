@@ -5,6 +5,7 @@ extends Node
 
 var current_upgrades = {}
 var upgrade_pool: WeightedTable = WeightedTable.new()
+var weapon_evolution: WeaponEvolution = WeaponEvolution.new()
 
 var upgrade_axe := preload("res://resources/upgrades/axe.tres")
 var upgrade_axe_damage := preload("res://resources/upgrades/axe_damage.tres")
@@ -97,3 +98,31 @@ func on_level_up(current_level: int):
 
 func on_upgrade_selected(upgrade: AbilityUpgrade):
 	apply_upgrade(upgrade)
+
+
+func check_evolution(weapon_id: String) -> bool:
+	return weapon_evolution.can_evolve(weapon_id, current_upgrades)
+
+
+func apply_evolution(weapon_id: String) -> bool:
+	var evolution_result = weapon_evolution.evolve(weapon_id, current_upgrades)
+	if evolution_result.is_empty():
+		return false
+	
+	var evolved_weapon_id = evolution_result["evolved_weapon"]
+	var required_item = evolution_result["required_item"]
+	
+	current_upgrades.erase(required_item)
+	current_upgrades.erase(weapon_id)
+	
+	current_upgrades[evolved_weapon_id] = {
+		"resource": null,
+		"quantity": 1,
+	}
+	
+	GameEvents.emit_ability_upgrade_added(null, current_upgrades)
+	return true
+
+
+func get_evolution_info(weapon_id: String) -> Dictionary:
+	return weapon_evolution.get_evolution_info(weapon_id)

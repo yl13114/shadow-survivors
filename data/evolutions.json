@@ -1,0 +1,64 @@
+{
+  "evolutions": [
+    {
+      "base_weapon": "holy_staff",
+      "required_item": "holy_amulet",
+      "evolved_weapon": "angel_staff",
+      "description": "光束穿透+击杀回血"
+    },
+    {
+      "base_weapon": "shadow_dagger",
+      "required_item": "shadow_cloak",
+      "evolved_weapon": "reaper_scythe",
+      "description": "暴击斩杀低血量敌人"
+    },
+    {
+      "base_weapon": "thunder_hammer",
+      "required_item": "thunder_ring",
+      "evolved_weapon": "thunder_wrath",
+      "description": "落雷范围+连锁闪电"
+    },
+    {
+      "base_weapon": "flame_staff",
+      "required_item": "flame_heart",
+      "evolved_weapon": "doomsday_flame",
+      "description": "地面燃烧+叠加灼烧"
+    },
+    {
+      "base_weapon": "frost_bow",
+      "required_item": "frost_gem",
+      "evolved_weapon": "permafrost_bow",
+      "description": "冰冻3秒+碎冰AOE"
+    },
+    {
+      "base_weapon": "viper_fang",
+      "required_item": "serpent_badge",
+      "evolved_weapon": "hydra_venom",
+      "description": "毒液分裂+持续扩散"
+    },
+    {
+      "base_weapon": "holy_shield",
+      "required_item": "guardian_medal",
+      "evolved_weapon": "divine_barrier",
+      "description": "护盾范围+反弹伤害"
+    },
+    {
+      "base_weapon": "whirlwind_slash",
+      "required_item": "berserker_belt",
+      "evolved_weapon": "storm_fury",
+      "description": "旋转范围+击退增强"
+    },
+    {
+      "base_weapon": "chain_lightning",
+      "required_item": "thunder_gem",
+      "evolved_weapon": "thunder_chain",
+      "description": "连锁数+伤害提升"
+    },
+    {
+      "base_weapon": "undead_summon",
+      "required_item": "necronomicon",
+      "evolved_weapon": "hell_legion",
+      "description": "召唤物数量+属性继承"
+    }
+  ]
+}
