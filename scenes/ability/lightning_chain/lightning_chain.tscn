@@ -9,7 +9,7 @@ radius = 5.0
 script = ExtResource("1_script")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 0.5, 1)
+modulate = Color(0.6, 0.3, 0.9, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_lightning")
