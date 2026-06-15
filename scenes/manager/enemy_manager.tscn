@@ -1,13 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://eadorq7tpodo"]
+[gd_scene load_steps=14 format=3 uid="uid://eadorq7tpodo"]
 
 [ext_resource type="Script" path="res://scenes/manager/enemy_manager.gd" id="1_46876"]
 [ext_resource type="PackedScene" uid="uid://bses7vk27cfvt" path="res://scenes/game_object/basic_enemy/basic_enemy.tscn" id="2_ytlsn"]
 [ext_resource type="PackedScene" uid="uid://biw4lngphcynu" path="res://scenes/game_object/wizard_enemy/wizard_enemy.tscn" id="3_2yvtx"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/bat_enemy/bat_enemy.tscn" id="4_bat"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/zombie_enemy/zombie_enemy.tscn" id="5_zombie"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/spider_enemy/spider_enemy.tscn" id="6_spider"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/ghost_enemy/ghost_enemy.tscn" id="7_ghost"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/werewolf_enemy/werewolf_enemy.tscn" id="8_werewolf"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/gargoyle_enemy/gargoyle_enemy.tscn" id="9_gargoyle"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/skeleton_king/skeleton_king.tscn" id="10_skeleton_king"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/demon_lord/demon_lord.tscn" id="11_demon_lord"]
+[ext_resource type="PackedScene" path="res://scenes/game_object/undead_lich/undead_lich.tscn" id="12_undead_lich"]
 
 [node name="EnemyManager" type="Node"]
 script = ExtResource("1_46876")
 basic_enemy_scene = ExtResource("2_ytlsn")
 wizard_enemy_scene = ExtResource("3_2yvtx")
+bat_enemy_scene = ExtResource("4_bat")
+zombie_enemy_scene = ExtResource("5_zombie")
+spider_enemy_scene = ExtResource("6_spider")
+ghost_enemy_scene = ExtResource("7_ghost")
+werewolf_enemy_scene = ExtResource("8_werewolf")
+gargoyle_enemy_scene = ExtResource("9_gargoyle")
+skeleton_king_scene = ExtResource("10_skeleton_king")
+demon_lord_scene = ExtResource("11_demon_lord")
+undead_lich_scene = ExtResource("12_undead_lich")
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true

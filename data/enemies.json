@@ -1,0 +1,87 @@
+{
+  "waves": [
+    {
+      "wave": 1,
+      "time_range": "0-2",
+      "difficulty": 1,
+      "enemies": [
+        {"type": "basic_enemy", "weight": 10, "stats": {"max_health": 10, "max_speed": 40, "acceleration": 5}},
+        {"type": "bat_enemy", "weight": 8, "stats": {"max_health": 6, "max_speed": 70, "acceleration": 8}}
+      ]
+    },
+    {
+      "wave": 2,
+      "time_range": "2-4",
+      "difficulty": 2,
+      "enemies": [
+        {"type": "basic_enemy", "weight": 8, "stats": {"max_health": 15, "max_speed": 42, "acceleration": 5.5}},
+        {"type": "bat_enemy", "weight": 6, "stats": {"max_health": 8, "max_speed": 72, "acceleration": 8.5}},
+        {"type": "zombie_enemy", "weight": 7, "stats": {"max_health": 30, "max_speed": 25, "acceleration": 3}},
+        {"type": "spider_enemy", "weight": 6, "stats": {"max_health": 12, "max_speed": 55, "acceleration": 6}}
+      ]
+    },
+    {
+      "wave": 3,
+      "time_range": "4-6",
+      "difficulty": 3,
+      "enemies": [
+        {"type": "basic_enemy", "weight": 6, "stats": {"max_health": 20, "max_speed": 45, "acceleration": 6}},
+        {"type": "zombie_enemy", "weight": 6, "stats": {"max_health": 40, "max_speed": 28, "acceleration": 3.5}},
+        {"type": "spider_enemy", "weight": 5, "stats": {"max_health": 15, "max_speed": 58, "acceleration": 6.5}},
+        {"type": "ghost_enemy", "weight": 5, "stats": {"max_health": 18, "max_speed": 50, "acceleration": 7}},
+        {"type": "werewolf_enemy", "weight": 4, "stats": {"max_health": 50, "max_speed": 60, "acceleration": 6}}
+      ]
+    },
+    {
+      "wave": 4,
+      "time_range": "6-8",
+      "difficulty": 4,
+      "enemies": [
+        {"type": "zombie_enemy", "weight": 5, "stats": {"max_health": 55, "max_speed": 30, "acceleration": 4}},
+        {"type": "spider_enemy", "weight": 5, "stats": {"max_health": 20, "max_speed": 60, "acceleration": 7}},
+        {"type": "ghost_enemy", "weight": 5, "stats": {"max_health": 25, "max_speed": 55, "acceleration": 7.5}},
+        {"type": "werewolf_enemy", "weight": 5, "stats": {"max_health": 65, "max_speed": 65, "acceleration": 6.5}},
+        {"type": "gargoyle_enemy", "weight": 4, "stats": {"max_health": 70, "max_speed": 45, "acceleration": 5}}
+      ]
+    },
+    {
+      "wave": 5,
+      "time_range": "8-10",
+      "difficulty": 5,
+      "enemies": [
+        {"type": "werewolf_enemy", "weight": 6, "stats": {"max_health": 80, "max_speed": 70, "acceleration": 7}},
+        {"type": "gargoyle_enemy", "weight": 5, "stats": {"max_health": 90, "max_speed": 50, "acceleration": 5.5}},
+        {"type": "ghost_enemy", "weight": 4, "stats": {"max_health": 35, "max_speed": 60, "acceleration": 8}}
+      ]
+    }
+  ],
+  "bosses": [
+    {
+      "id": "skeleton_king",
+      "name": "骷髅王",
+      "map": "暗影森林",
+      "max_health": 5000,
+      "abilities": ["summon_skeletons", "ground_spike"],
+      "spawn_wave": 5,
+      "spawn_time": 180
+    },
+    {
+      "id": "demon_lord",
+      "name": "恶魔领主",
+      "map": "地下墓穴",
+      "max_health": 8000,
+      "abilities": ["fire_aoe", "teleport_chase"],
+      "spawn_wave": 5,
+      "spawn_time": 360
+    },
+    {
+      "id": "undead_lich",
+      "name": "亡灵巫妖",
+      "map": "恶魔城堡",
+      "max_health": 12000,
+      "abilities": ["revive_monsters", "slow_curse"],
+      "spawn_wave": 5,
+      "spawn_time": 540
+    }
+  ]
+}
