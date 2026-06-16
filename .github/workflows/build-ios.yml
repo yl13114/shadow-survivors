@@ -15,10 +15,9 @@ jobs:
       
     - name: Install Godot 4.4
       run: |
-        curl -L -o godot.dmg "https://github.com/godotengine/godot/releases/download/4.4-stable/Godot_v4.4-stable_macos.dmg"
-        hdiutil attach godot.dmg
-        cp -R "/Volumes/Godot/Godot.app" /Applications/Godot.app
-        hdiutil detach "/Volumes/Godot"
+        curl -L -o godot.zip "https://github.com/godotengine/godot/releases/download/4.4-stable/Godot_v4.4-stable_macos.universal.zip"
+        unzip -q godot.zip
+        mv Godot_v4.4-stable_macos.universal/Godot.app /Applications/Godot.app
         chmod +x /Applications/Godot.app/Contents/MacOS/Godot
         
     - name: Install Export Templates
