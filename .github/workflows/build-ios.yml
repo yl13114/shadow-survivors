@@ -26,35 +26,40 @@ jobs:
         curl -L -o templates.tpz "https://github.com/godotengine/godot/releases/download/4.4-stable/Godot_v4.4-stable_export_templates.tpz"
         unzip -q -o templates.tpz -d /tmp/templates
         mv /tmp/templates/templates/* "$TEMPLATES_DIR/"
-        ls "$TEMPLATES_DIR/"
         
     - name: Add iOS Export Preset
       run: |
-        echo "" >> export_presets.cfg
-        echo "[preset.5]" >> export_presets.cfg
-        echo "name=\"iOS\"" >> export_presets.cfg
-        echo "platform=\"iOS\"" >> export_presets.cfg
-        echo "runnable=true" >> export_presets.cfg
-        echo "dedicated_server=false" >> export_presets.cfg
-        echo "custom_features=\"\"" >> export_presets.cfg
-        echo "export_filter=\"all_resources\"" >> export_presets.cfg
-        echo "include_filter=\"\"" >> export_presets.cfg
-        echo "exclude_filter=\"\"" >> export_presets.cfg
-        echo "export_path=\"build/ios/shadow-survivors\"" >> export_presets.cfg
-        echo "encryption_include_filters=\"\"" >> export_presets.cfg
-        echo "encryption_exclude_filters=\"\"" >> export_presets.cfg
-        echo "encrypt_pck=false" >> export_presets.cfg
-        echo "encrypt_directory=false" >> export_presets.cfg
-        echo "" >> export_presets.cfg
-        echo "[preset.5.options]" >> export_presets.cfg
-        echo "custom_template/debug=\"\"" >> export_presets.cfg
-        echo "custom_template/release=\"\"" >> export_presets.cfg
-        echo "application/name=\"Shadow Survivors\"" >> export_presets.cfg
-        echo "application/bundle_identifier=\"com.shadow.survivors\"" >> export_presets.cfg
-        echo "application/short_version=\"1.0\"" >> export_presets.cfg
-        echo "application/version=\"1\"" >> export_presets.cfg
-        echo "application/icon=\"res://icon.png\"" >> export_presets.cfg
-        echo "application/code_sign=false" >> export_presets.cfg
+        cat >> export_presets.cfg << 'EOF'
+
+[preset.5]
+
+name="iOS"
+platform="iOS"
+runnable=true
+dedicated_server=false
+custom_features=""
+export_filter="all_resources"
+include_filter=""
+exclude_filter=""
+export_path="build/ios/shadow-survivors"
+encryption_include_filters=""
+encryption_exclude_filters=""
+encrypt_pck=false
+encrypt_directory=false
+
+[preset.5.options]
+
+custom_template/debug=""
+custom_template/release=""
+application/name="Shadow Survivors"
+application/bundle_identifier="com.shadow.survivors"
+application/short_version="1.0"
+application/version="1"
+application/icon="res://icon.png"
+application/code_sign=false
+application/app_category="Games"
+application/apple_team_id=""
+EOF
         
     - name: Export to Xcode Project
       run: |
