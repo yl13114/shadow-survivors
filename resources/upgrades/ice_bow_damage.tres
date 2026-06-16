@@ -6,5 +6,5 @@
 script = ExtResource("1_script")
 id = "ice_bow_damage"
 max_quantity = 0
-name = "Ice Bow Damage"
-description = "Increases ice bow damage by 15%."
+name = "冰霜弓伤害"
+description = "冰霜弓伤害+15%。"

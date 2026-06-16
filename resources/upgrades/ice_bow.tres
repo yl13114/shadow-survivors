@@ -8,5 +8,5 @@ script = ExtResource("2_script")
 ability_controller_scene = ExtResource("1_scene")
 id = "ice_bow"
 max_quantity = 1
-name = "Ice Bow"
-description = "Shoots ice arrows that slow enemies."
+name = "冰霜弓"
+description = "发射冰箭减速敌人。"

@@ -8,5 +8,5 @@ script = ExtResource("2_script")
 ability_controller_scene = ExtResource("1_scene")
 id = "lightning_chain"
 max_quantity = 1
-name = "Lightning Chain"
-description = "Strikes enemies with chain lightning."
+name = "闪电链"
+description = "释放连锁闪电攻击敌人。"

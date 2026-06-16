@@ -6,5 +6,5 @@
 script = ExtResource("1_xd06m")
 id = "player_speed"
 max_quantity = 2
-name = "Move Speed"
-description = "Increases player movement sped by 10%."
+name = "移动速度"
+description = "移动速度+10%。"
