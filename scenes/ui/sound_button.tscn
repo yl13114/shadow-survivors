@@ -9,7 +9,7 @@
 offset_right = 6.0
 offset_bottom = 6.0
 scale = Vector2(1.02739, 1.02005)
-text = "Sound Button"
+text = "音效按钮"
 script = ExtResource("1_7ydko")
 
 [node name="RandomAudioStreamPlayerComponent" parent="." instance=ExtResource("2_mgyaf")]
