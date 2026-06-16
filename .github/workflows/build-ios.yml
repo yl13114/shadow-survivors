@@ -7,7 +7,7 @@ on:
 
 jobs:
   export-ios:
-    runs-on: macos-14  # M1 Mac runner
+    runs-on: macos-14
     
     steps:
     - name: Checkout
@@ -15,7 +15,6 @@ jobs:
       
     - name: Install Godot 4.4
       run: |
-        # Download Godot 4.4 for macOS
         curl -L -o godot.dmg "https://github.com/godotengine/godot/releases/download/4.4-stable/Godot_v4.4-stable_macos.dmg"
         hdiutil attach godot.dmg
         cp -R "/Volumes/Godot/Godot.app" /Applications/Godot.app
@@ -29,89 +28,34 @@ jobs:
         curl -L -o templates.tpz "https://github.com/godotengine/godot/releases/download/4.4-stable/Godot_v4.4-stable_export_templates.tpz"
         unzip -q templates.tpz -d /tmp/templates
         mv /tmp/templates/templates/* "$TEMPLATES_DIR/"
-        ls "$TEMPLATES_DIR/"
         
     - name: Add iOS Export Preset
       run: |
-        # Append iOS preset to export_presets.cfg
-        cat >> export_presets.cfg << 'PRESET'
-
-[preset.5]
-
-name="iOS"
-platform="iOS"
-runnable=true
-dedicated_server=false
-custom_features=""
-export_filter="all_resources"
-include_filter=""
-exclude_filter=""
-export_path="build/ios/shadow-survivors"
-encryption_include_filters=""
-encryption_exclude_filters=""
-encrypt_pck=false
-encrypt_directory=false
-
-[preset.5.options]
-
-custom_template/debug=""
-custom_template/release=""
-application/name="Shadow Survivors"
-application/add_mfi_controller_support=false
-application/apple_team_id=""
-application/export_id=""
-application/code_sign=false
-application/code_sign_certificate=""
-application/provisioning_profile_uuid=""
-application/bundle_identifier="com.shadow.survivors"
-application/short_version="1.0"
-application/version="1"
-application/copyright=""
-application/icon="res://icon.png"
-application/icon_interpolation=0
-application/launch_screenshots=[]
-application/launch_screen_ipad_image=""
-application/launch_screen_ipad_background=""
-application/launch_screen_ipad_custom=""
-application/launch_screen_ipad_custom_bg_color=Color(0, 0, 0, 1)
-application/launch_screen_ipad_use_custom_bg_color=false
-application/launch_screen_ipad_mode=0
-application/launch_screen_ipad_dark_background_color=Color(0, 0, 0, 1)
-application/launch_screen_ipad_dark_mode=0
-application/launch_screen_ipad_use_dark_bg_color=false
-application/launch_screen_image=""
-application/launch_screen_background=""
-application/launch_screen_custom=""
-application/launch_screen_custom_bg_color=Color(0, 0, 0, 1)
-application/launch_screen_use_custom_bg_color=false
-application/launch_screen_mode=0
-application/launch_screen_dark_background_color=Color(0, 0, 0, 1)
-application/launch_screen_dark_mode=0
-application/launch_screen_use_dark_bg_color=false
-application/user_data_storage=false
-application/iCloud=false
-application/data_storage=false
-application/data_storage_uuid=""
-application/game_center=false
-application/game_center_leaderboard=true
-application/game_center_achievement=true
-application/game_center_challenge=true
-application/game_center_reachability=false
-application/mfi_controller=false
-application/push_notifications=false
-application/push_notification_uuid=""
-application/additional_url_schemes=[]
-application/status_bar_style=0
-application/status_bar_hidden=false
-application/statusBarStyle=0
-application/statusBarHidden=false
-application/apple_keyboard_type=0
-application/hide_home_indicator=true
-application/enable_application_shortcuts=false
-application/enable_responsive=true
-application/enable_dynamic_simulator_size=true
-application/enable_dynamic_ipad_size=false
-PRESET
+        echo "" >> export_presets.cfg
+        echo "[preset.5]" >> export_presets.cfg
+        echo "name=\"iOS\"" >> export_presets.cfg
+        echo "platform=\"iOS\"" >> export_presets.cfg
+        echo "runnable=true" >> export_presets.cfg
+        echo "dedicated_server=false" >> export_presets.cfg
+        echo "custom_features=\"\"" >> export_presets.cfg
+        echo "export_filter=\"all_resources\"" >> export_presets.cfg
+        echo "include_filter=\"\"" >> export_presets.cfg
+        echo "exclude_filter=\"\"" >> export_presets.cfg
+        echo "export_path=\"build/ios/shadow-survivors\"" >> export_presets.cfg
+        echo "encryption_include_filters=\"\"" >> export_presets.cfg
+        echo "encryption_exclude_filters=\"\"" >> export_presets.cfg
+        echo "encrypt_pck=false" >> export_presets.cfg
+        echo "encrypt_directory=false" >> export_presets.cfg
+        echo "" >> export_presets.cfg
+        echo "[preset.5.options]" >> export_presets.cfg
+        echo "custom_template/debug=\"\"" >> export_presets.cfg
+        echo "custom_template/release=\"\"" >> export_presets.cfg
+        echo "application/name=\"Shadow Survivors\"" >> export_presets.cfg
+        echo "application/bundle_identifier=\"com.shadow.survivors\"" >> export_presets.cfg
+        echo "application/short_version=\"1.0\"" >> export_presets.cfg
+        echo "application/version=\"1\"" >> export_presets.cfg
+        echo "application/icon=\"res://icon.png\"" >> export_presets.cfg
+        echo "application/code_sign=false" >> export_presets.cfg
         
     - name: Export to Xcode Project
       run: |
