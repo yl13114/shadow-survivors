@@ -53,9 +53,9 @@ jobs:
         echo "application/short_version=\"1.0\"" >> export_presets.cfg
         echo "application/version=\"1\"" >> export_presets.cfg
         echo "application/icon=\"res://icon.png\"" >> export_presets.cfg
-        echo "application/code_sign=false" >> export_presets.cfg
+        echo "application/code_sign=true" >> export_presets.cfg
         echo "application/app_category=\"Games\"" >> export_presets.cfg
-        echo "application/apple_team_id=\"\"" >> export_presets.cfg
+        echo "application/apple_team_id=\"9C8NPD5QPB\"" >> export_presets.cfg
         
     - name: Export to Xcode Project
       run: |
