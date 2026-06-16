@@ -2,8 +2,8 @@
   "characters": [
     {
       "id": "knight",
-      "name": "Shadow Knight",
-      "description": "A fallen warrior risen from the abyss. Wields a cursed blade and heavy armor.",
+      "name": "暗影骑士",
+      "description": "从深渊中崛起的堕落战士，手持诅咒之刃，身披重甲。",
       "stats": {
         "max_health": 120,
         "move_speed": 120,
