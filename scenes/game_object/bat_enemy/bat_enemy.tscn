@@ -1,13 +1,13 @@
-[gd_scene load_steps=18 format=3]
+[gd_scene load_steps=17 format=3 uid="uid://c0vetji6s0qyr"]
 
-[ext_resource type="Script" path="res://scenes/game_object/bat_enemy/bat_enemy.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://w7omihwe5sg8" path="res://scenes/game_object/bat_enemy/bat_enemy.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://cc6p0wg3ww2jf" path="res://scenes/game_object/basic_enemy/basic_enemy.png" id="1_texture"]
 [ext_resource type="PackedScene" uid="uid://d32bhk07dm6w8" path="res://scenes/component/health_component.tscn" id="2_health"]
 [ext_resource type="PackedScene" uid="uid://ci3popyfx4vbv" path="res://scenes/component/vial_drop_component.tscn" id="3_vial"]
 [ext_resource type="PackedScene" uid="uid://cn4jjvvblm8lp" path="res://scenes/component/velocity_component.tscn" id="4_velocity"]
 [ext_resource type="PackedScene" uid="uid://gsyk0iqo1m50" path="res://scenes/component/hurtbox_component.tscn" id="5_hurtbox"]
 [ext_resource type="PackedScene" uid="uid://cjxiijis5jocn" path="res://scenes/component/death_component.tscn" id="6_death"]
-[ext_resource type="Shader" path="res://scenes/component/hit_flash_component.gdshader" id="7_shader"]
+[ext_resource type="Shader" uid="uid://clpvb6u8o6nvv" path="res://scenes/component/hit_flash_component.gdshader" id="7_shader"]
 [ext_resource type="PackedScene" uid="uid://bkkq5ohgbnkxw" path="res://scenes/component/hit_flash_component.tscn" id="8_hitflash"]
 [ext_resource type="PackedScene" uid="uid://bh478361trp2r" path="res://scenes/component/random_audio_stream_player_2d_component.tscn" id="9_audio"]
 [ext_resource type="AudioStream" uid="uid://ckjo8r6fns8s1" path="res://assets/audio/footstep_carpet_000.ogg" id="10_a1"]
@@ -20,7 +20,6 @@ shader = ExtResource("7_shader")
 shader_parameter/lerp_percent = 0.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hurtbox"]
-radius = 10.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_collision"]
 radius = 4.0

@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://clfkst7vn7nax"]
 
 [ext_resource type="PackedScene" uid="uid://n7p1t353jjgd" path="res://scenes/ui/ability_upgrade_card.tscn" id="1_1o8ra"]
-[ext_resource type="Script" path="res://scenes/ui/upgrade_screen.gd" id="1_oekd0"]
+[ext_resource type="Script" uid="uid://cetet7k530tmn" path="res://scenes/ui/upgrade_screen.gd" id="1_oekd0"]
 
 [sub_resource type="Animation" id="Animation_adju6"]
 length = 0.001
@@ -54,9 +54,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yg6vw"]
 _data = {
-"RESET": SubResource("Animation_adju6"),
-"in": SubResource("Animation_ynt2q"),
-"out": SubResource("Animation_c5l1u")
+&"RESET": SubResource("Animation_adju6"),
+&"in": SubResource("Animation_ynt2q"),
+&"out": SubResource("Animation_c5l1u")
 }
 
 [node name="UpgradeScreen" type="CanvasLayer"]

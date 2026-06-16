@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://vgi06wd6y7mg"]
 
-[ext_resource type="Script" path="res://scenes/ability/axe_ability_controller/axe_ability_controller.gd" id="1_b46ui"]
+[ext_resource type="Script" uid="uid://j8vyc7crx88" path="res://scenes/ability/axe_ability_controller/axe_ability_controller.gd" id="1_b46ui"]
 [ext_resource type="PackedScene" uid="uid://baftexcjd10nj" path="res://scenes/ability/axe_ability/axe_ability.tscn" id="2_emhh8"]
 
 [node name="AxeAbilityController" type="Node"]

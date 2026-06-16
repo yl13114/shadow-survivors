@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cdaelw5lh4xey"]
 
-[ext_resource type="Script" path="res://scenes/ui/main_menu.gd" id="1_vrpen"]
+[ext_resource type="Script" uid="uid://83n5n5fso0lc" path="res://scenes/ui/main_menu.gd" id="1_vrpen"]
 [ext_resource type="TileSet" uid="uid://b6us1ivpw5jq2" path="res://resources/tileset.tres" id="1_y67uk"]
 [ext_resource type="PackedScene" uid="uid://dumjej53vmw4d" path="res://scenes/ui/sound_button.tscn" id="2_8jljl"]
 [ext_resource type="PackedScene" uid="uid://gisddfn8bqx" path="res://scenes/ui/vignette.tscn" id="2_swaud"]
@@ -40,32 +40,32 @@ size_flags_vertical = 4
 layout_mode = 2
 theme_type_variation = &"BlueOutlineLabel"
 theme_override_font_sizes/font_size = 32
-text = "Arena Arena"
+text = "暗影幸存者"
 
 [node name="PlayButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_8jljl")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Play"
+text = "开始游戏"
 
 [node name="UpgradesButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_8jljl")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Upgrades"
+text = "升级"
 
 [node name="GoldUpgradesButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_8jljl")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Gold Upgrades"
+text = "金币升级"
 
 [node name="OptionsButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_8jljl")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Options"
+text = "设置"
 
 [node name="QuitButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_8jljl")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Quit"
+text = "退出"
 
 [node name="Vignette" parent="." instance=ExtResource("2_swaud")]
 layer = 2

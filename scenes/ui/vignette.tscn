@@ -1,7 +1,34 @@
 [gd_scene load_steps=7 format=3 uid="uid://gisddfn8bqx"]
 
-[ext_resource type="Script" path="res://scenes/ui/vignette.gd" id="1_abhjy"]
-[ext_resource type="Shader" path="res://scenes/ui/vignette.gdshader" id="1_yjtis"]
+[ext_resource type="Script" uid="uid://bynb4u6lhg2e4" path="res://scenes/ui/vignette.gd" id="1_abhjy"]
+[ext_resource type="Shader" uid="uid://bg4me3u7wk2cd" path="res://scenes/ui/vignette.gdshader" id="1_yjtis"]
+
+[sub_resource type="Animation" id="Animation_d22ku"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:material:shader_parameter/vignette_intensity")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.59]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:material:shader_parameter/vignette_rgb")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.247059, 0.14902, 0.192157, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_681uw"]
 resource_name = "hit"
@@ -32,37 +59,10 @@ tracks/1/keys = {
 "values": [Color(0.247059, 0.14902, 0.192157, 1), Color(0.909804, 0.270588, 0.215686, 1), Color(0.247059, 0.14902, 0.192157, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_d22ku"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ColorRect:material:shader_parameter/vignette_intensity")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.59]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ColorRect:material:shader_parameter/vignette_rgb")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.247059, 0.14902, 0.192157, 1)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vnynl"]
 _data = {
-"RESET": SubResource("Animation_d22ku"),
-"hit": SubResource("Animation_681uw")
+&"RESET": SubResource("Animation_d22ku"),
+&"hit": SubResource("Animation_681uw")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_38j4d"]

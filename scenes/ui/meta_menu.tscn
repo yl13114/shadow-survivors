@@ -1,15 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://c7iqvnumxpm2g"]
+[gd_scene load_steps=7 format=3 uid="uid://c7iqvnumxpm2g"]
 
-[ext_resource type="Script" path="res://scenes/ui/meta_menu.gd" id="1_8duuh"]
+[ext_resource type="Script" uid="uid://dyqa8lmgjt3q6" path="res://scenes/ui/meta_menu.gd" id="1_8duuh"]
 [ext_resource type="TileSet" uid="uid://b6us1ivpw5jq2" path="res://resources/tileset.tres" id="2_bgia4"]
 [ext_resource type="PackedScene" uid="uid://bayyc7rvlabst" path="res://scenes/ui/meta_upgrade_card.tscn" id="2_jkrbf"]
+[ext_resource type="Script" uid="uid://ictehtwijup" path="res://resources/meta_upgrade/meta_upgrade.gd" id="2_tykgm"]
 [ext_resource type="Resource" uid="uid://b1j6h4bippirj" path="res://resources/meta_upgrade/experience_gain.tres" id="2_uklom"]
 [ext_resource type="PackedScene" uid="uid://gisddfn8bqx" path="res://scenes/ui/vignette.tscn" id="4_15gtb"]
 
 [node name="MetaMenu" type="CanvasLayer"]
 layer = 2
 script = ExtResource("1_8duuh")
-upgrades = Array[Resource("res://resources/meta_upgrade/meta_upgrade.gd")]([ExtResource("2_uklom")])
+upgrades = Array[ExtResource("2_tykgm")]([ExtResource("2_uklom")])
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("2_bgia4")
@@ -63,7 +64,7 @@ custom_minimum_size = Vector2(50, 2.08165e-12)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-text = "Back"
+text = "返回"
 
 [node name="Vignette" parent="." instance=ExtResource("4_15gtb")]
 layer = 3

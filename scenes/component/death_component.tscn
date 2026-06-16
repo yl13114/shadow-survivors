@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://cjxiijis5jocn"]
 
 [ext_resource type="Texture2D" uid="uid://cc6p0wg3ww2jf" path="res://scenes/game_object/basic_enemy/basic_enemy.png" id="1_nxw5s"]
-[ext_resource type="Script" path="res://scenes/component/death_component.gd" id="1_yodoj"]
+[ext_resource type="Script" uid="uid://37nwfclrvvvl" path="res://scenes/component/death_component.gd" id="1_yodoj"]
 [ext_resource type="PackedScene" uid="uid://bh478361trp2r" path="res://scenes/component/random_audio_stream_player_2d_component.tscn" id="3_3eut6"]
 [ext_resource type="AudioStream" uid="uid://ckjo8r6fns8s1" path="res://assets/audio/footstep_carpet_000.ogg" id="4_ub4hc"]
 [ext_resource type="AudioStream" uid="uid://bhxo10h1q3e2" path="res://assets/audio/footstep_carpet_001.ogg" id="5_ydvir"]
@@ -55,8 +55,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_j3x6f"]
 _data = {
-"RESET": SubResource("Animation_53x1v"),
-"default": SubResource("Animation_mmhuk")
+&"RESET": SubResource("Animation_53x1v"),
+&"default": SubResource("Animation_mmhuk")
 }
 
 [sub_resource type="Curve" id="Curve_jqi00"]

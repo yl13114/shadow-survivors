@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://f5a6b7c8d9e0f1a2"]
+[gd_scene load_steps=3 format=3 uid="uid://dksgkduogno80"]
 
-[ext_resource type="Script" path="res://scenes/ability/lightning_chain_controller/lightning_chain_controller.gd" id="1_script"]
-[ext_resource type="PackedScene" uid="uid://e3e4f5a6b7c8d9e0" path="res://scenes/ability/lightning_chain/lightning_chain.tscn" id="2_scene"]
+[ext_resource type="Script" uid="uid://1673f3yc6eob" path="res://scenes/ability/lightning_chain_controller/lightning_chain_controller.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://d287t5bcdxroj" path="res://scenes/ability/lightning_chain/lightning_chain.tscn" id="2_scene"]
 
 [node name="LightningChainController" type="Node"]
 script = ExtResource("1_script")

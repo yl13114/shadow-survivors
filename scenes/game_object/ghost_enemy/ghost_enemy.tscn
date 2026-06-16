@@ -1,13 +1,13 @@
-[gd_scene load_steps=18 format=3]
+[gd_scene load_steps=17 format=3 uid="uid://3b4bp10tvv4s"]
 
-[ext_resource type="Script" path="res://scenes/game_object/ghost_enemy/ghost_enemy.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://dw716kjbfof6u" path="res://scenes/game_object/ghost_enemy/ghost_enemy.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://cc6p0wg3ww2jf" path="res://scenes/game_object/basic_enemy/basic_enemy.png" id="1_texture"]
 [ext_resource type="PackedScene" uid="uid://d32bhk07dm6w8" path="res://scenes/component/health_component.tscn" id="2_health"]
 [ext_resource type="PackedScene" uid="uid://ci3popyfx4vbv" path="res://scenes/component/vial_drop_component.tscn" id="3_vial"]
 [ext_resource type="PackedScene" uid="uid://cn4jjvvblm8lp" path="res://scenes/component/velocity_component.tscn" id="4_velocity"]
 [ext_resource type="PackedScene" uid="uid://gsyk0iqo1m50" path="res://scenes/component/hurtbox_component.tscn" id="5_hurtbox"]
 [ext_resource type="PackedScene" uid="uid://cjxiijis5jocn" path="res://scenes/component/death_component.tscn" id="6_death"]
-[ext_resource type="Shader" path="res://scenes/component/hit_flash_component.gdshader" id="7_shader"]
+[ext_resource type="Shader" uid="uid://clpvb6u8o6nvv" path="res://scenes/component/hit_flash_component.gdshader" id="7_shader"]
 [ext_resource type="PackedScene" uid="uid://bkkq5ohgbnkxw" path="res://scenes/component/hit_flash_component.tscn" id="8_hitflash"]
 [ext_resource type="PackedScene" uid="uid://bh478361trp2r" path="res://scenes/component/random_audio_stream_player_2d_component.tscn" id="9_audio"]
 [ext_resource type="AudioStream" uid="uid://ckjo8r6fns8s1" path="res://assets/audio/footstep_carpet_000.ogg" id="10_a1"]
@@ -69,7 +69,7 @@ debug_color = Color(0.991942, 0, 0.258832, 0.42)
 texture = ExtResource("1_texture")
 offset = Vector2(2.08165e-12, -4)
 scale = Vector2(0.9, 0.9)
-modulate = Color(0.7, 0.7, 1.0, 0.8)
+modulate = Color(0.7, 0.7, 1, 0.8)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2.08165e-12, -5)

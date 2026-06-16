@@ -20,8 +20,8 @@ func _ready():
 
 
 func set_defeat():
-	%TitleLabel.text = "Defeat"
-	%DescriptionLabel.text = "You lost!"
+	%TitleLabel.text = "失败"
+	%DescriptionLabel.text = "你被击败了！"
 	play_jingle(true)
 
 

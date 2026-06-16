@@ -33,10 +33,10 @@ func update_display():
 	cost_label.text = "%d G" % cost
 
 	if current_level >= max_level:
-		purchase_button.text = "Max"
+		purchase_button.text = "已满"
 		purchase_button.disabled = true
 	else:
-		purchase_button.text = "Buy"
+		purchase_button.text = "购买"
 		purchase_button.disabled = gold < cost
 
 

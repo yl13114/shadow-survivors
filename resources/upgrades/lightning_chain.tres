@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="Ability" load_steps=3 format=3 uid="uid://c7d8e9f0a1b2c3d4"]
+[gd_resource type="Resource" script_class="Ability" load_steps=3 format=3 uid="uid://dnmf52baka78r"]
 
-[ext_resource type="PackedScene" uid="uid://f5a6b7c8d9e0f1a2" path="res://scenes/ability/lightning_chain_controller/lightning_chain_controller.tscn" id="1_scene"]
-[ext_resource type="Script" path="res://resources/upgrades/ability.gd" id="2_script"]
+[ext_resource type="PackedScene" uid="uid://dksgkduogno80" path="res://scenes/ability/lightning_chain_controller/lightning_chain_controller.tscn" id="1_scene"]
+[ext_resource type="Script" uid="uid://b3n8sfnpko5" path="res://resources/upgrades/ability.gd" id="2_script"]
 
 [resource]
 script = ExtResource("2_script")

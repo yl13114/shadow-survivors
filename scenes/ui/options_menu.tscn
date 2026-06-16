@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://demuieu5q65kl"]
 
-[ext_resource type="Script" path="res://scenes/ui/options_menu.gd" id="1_hm70i"]
+[ext_resource type="Script" uid="uid://cot23u2g1w2aq" path="res://scenes/ui/options_menu.gd" id="1_hm70i"]
 [ext_resource type="TileSet" uid="uid://b6us1ivpw5jq2" path="res://resources/tileset.tres" id="2_3alsd"]
 [ext_resource type="PackedScene" uid="uid://gisddfn8bqx" path="res://scenes/ui/vignette.tscn" id="2_utlq5"]
 [ext_resource type="PackedScene" uid="uid://dumjej53vmw4d" path="res://scenes/ui/sound_button.tscn" id="3_n6dag"]
@@ -43,7 +43,7 @@ theme_override_constants/separation = 24
 layout_mode = 2
 theme_type_variation = &"BlueOutlineLabel"
 theme_override_font_sizes/font_size = 32
-text = "Options"
+text = "设置"
 horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
@@ -56,7 +56,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/MusicOptionContainer"]
 layout_mode = 2
 theme_type_variation = &"BlueOutlineLabel"
-text = "Music Volume"
+text = "音乐音量"
 
 [node name="MusicSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/MusicOptionContainer"]
 unique_name_in_owner = true
@@ -71,7 +71,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/SfxOptionContainer"]
 layout_mode = 2
 theme_type_variation = &"BlueOutlineLabel"
-text = "SFX Volume"
+text = "音效音量"
 
 [node name="SfxSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/SfxOptionContainer"]
 unique_name_in_owner = true
@@ -86,7 +86,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/WindowOptionContainer"]
 layout_mode = 2
 theme_type_variation = &"BlueOutlineLabel"
-text = "Window Mode"
+text = "窗口模式"
 
 [node name="WindowButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/WindowOptionContainer" instance=ExtResource("3_n6dag")]
 unique_name_in_owner = true
@@ -99,7 +99,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 2.08165e-12)
 layout_mode = 2
 size_flags_horizontal = 8
-text = "Back"
+text = "返回"
 
 [node name="Vignette" parent="." instance=ExtResource("2_utlq5")]
 layer = 3

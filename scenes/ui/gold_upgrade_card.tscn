@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://blg4tct3vkoc4"]
 
-[ext_resource type="Script" path="res://scenes/ui/gold_upgrade_card.gd" id="1_abc"]
+[ext_resource type="Script" uid="uid://cx7gr3ss1fnv1" path="res://scenes/ui/gold_upgrade_card.gd" id="1_abc"]
 
 [sub_resource type="Animation" id="Animation_1"]
 length = 0.001
@@ -35,19 +35,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1"]
 _data = {
-"RESET": SubResource("Animation_1"),
-"selected": SubResource("Animation_2")
+&"RESET": SubResource("Animation_1"),
+&"selected": SubResource("Animation_2")
 }
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1"]
-content_margin_top = 4.0
-content_margin_bottom = 4.0
-bg_color = Color(0.2, 0.15, 0.1, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.8, 0.6, 0.2, 0.8)
 
 [node name="GoldUpgradeCard" type="PanelContainer" groups=["gold_upgrade_card"]]
 custom_minimum_size = Vector2(170, 0)
@@ -102,4 +92,4 @@ horizontal_alignment = 1
 [node name="PurchaseButton" type="Button" parent="MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Buy"
+text = "购买"

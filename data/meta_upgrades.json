@@ -2,8 +2,8 @@
   "upgrades": [
     {
       "id": "max_health",
-      "title": "Health Up",
-      "description": "+10 Maximum Health",
+      "title": "生命上限",
+      "description": "+10 最大生命值",
       "stat": "max_health",
       "value_per_level": 10,
       "max_level": 20,
@@ -12,8 +12,8 @@
     },
     {
       "id": "attack_power",
-      "title": "Attack Up",
-      "description": "+5% Damage",
+      "title": "攻击力",
+      "description": "+5% 伤害",
       "stat": "attack_power",
       "value_per_level": 0.05,
       "max_level": 20,
@@ -22,8 +22,8 @@
     },
     {
       "id": "move_speed",
-      "title": "Speed Up",
-      "description": "+3% Movement Speed",
+      "title": "移动速度",
+      "description": "+3% 移动速度",
       "stat": "move_speed",
       "value_per_level": 0.03,
       "max_level": 15,
@@ -32,8 +32,8 @@
     },
     {
       "id": "exp_gain",
-      "title": "EXP Up",
-      "description": "+5% Experience Gain",
+      "title": "经验获取",
+      "description": "+5% 经验获取",
       "stat": "exp_gain",
       "value_per_level": 0.05,
       "max_level": 15,
@@ -42,8 +42,8 @@
     },
     {
       "id": "gold_gain",
-      "title": "Gold Up",
-      "description": "+5% Gold Gain",
+      "title": "金币获取",
+      "description": "+5% 金币获取",
       "stat": "gold_gain",
       "value_per_level": 0.05,
       "max_level": 15,
@@ -52,8 +52,8 @@
     },
     {
       "id": "armor",
-      "title": "Armor Up",
-      "description": "+1 Armor",
+      "title": "护甲",
+      "description": "+1 护甲",
       "stat": "armor",
       "value_per_level": 1,
       "max_level": 10,

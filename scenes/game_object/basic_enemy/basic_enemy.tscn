@@ -1,13 +1,13 @@
 [gd_scene load_steps=22 format=3 uid="uid://bses7vk27cfvt"]
 
-[ext_resource type="Script" path="res://scenes/game_object/basic_enemy/basic_enemy.gd" id="1_gpcli"]
+[ext_resource type="Script" uid="uid://0h1jjlc2gehy" path="res://scenes/game_object/basic_enemy/basic_enemy.gd" id="1_gpcli"]
 [ext_resource type="Texture2D" uid="uid://cc6p0wg3ww2jf" path="res://scenes/game_object/basic_enemy/basic_enemy.png" id="1_m80w1"]
 [ext_resource type="PackedScene" uid="uid://d32bhk07dm6w8" path="res://scenes/component/health_component.tscn" id="2_en8ir"]
 [ext_resource type="PackedScene" uid="uid://ci3popyfx4vbv" path="res://scenes/component/vial_drop_component.tscn" id="3_v8t1l"]
 [ext_resource type="PackedScene" uid="uid://cn4jjvvblm8lp" path="res://scenes/component/velocity_component.tscn" id="4_7n42o"]
 [ext_resource type="PackedScene" uid="uid://gsyk0iqo1m50" path="res://scenes/component/hurtbox_component.tscn" id="4_e2gan"]
 [ext_resource type="PackedScene" uid="uid://cjxiijis5jocn" path="res://scenes/component/death_component.tscn" id="4_j8jii"]
-[ext_resource type="Shader" path="res://scenes/component/hit_flash_component.gdshader" id="6_jhg8v"]
+[ext_resource type="Shader" uid="uid://clpvb6u8o6nvv" path="res://scenes/component/hit_flash_component.gdshader" id="6_jhg8v"]
 [ext_resource type="PackedScene" uid="uid://bkkq5ohgbnkxw" path="res://scenes/component/hit_flash_component.tscn" id="7_4kqgf"]
 [ext_resource type="PackedScene" uid="uid://bh478361trp2r" path="res://scenes/component/random_audio_stream_player_2d_component.tscn" id="10_74ju1"]
 [ext_resource type="AudioStream" uid="uid://ckjo8r6fns8s1" path="res://assets/audio/footstep_carpet_000.ogg" id="10_d8kjc"]
@@ -74,8 +74,8 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xajbr"]
 _data = {
-"RESET": SubResource("Animation_lm0tv"),
-"walk": SubResource("Animation_vwo2u")
+&"RESET": SubResource("Animation_lm0tv"),
+&"walk": SubResource("Animation_vwo2u")
 }
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ollop"]

@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1c3b4d5e6f7g8h9"]
+[gd_scene load_steps=4 format=3 uid="uid://wfeh0mtj7bfg"]
 
-[ext_resource type="Script" path="res://scenes/ability/ice_bow/ice_bow.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://dj3rqxfwsm64u" path="res://scenes/ability/ice_bow/ice_bow.gd" id="1_script"]
 [ext_resource type="PackedScene" uid="uid://b07jrrt845lfp" path="res://scenes/component/hitbox_component.tscn" id="2_hitbox"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bow"]

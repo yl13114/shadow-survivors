@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2d3e4f5a6b7c8d9"]
+[gd_scene load_steps=3 format=3 uid="uid://b1ce5igigiiym"]
 
-[ext_resource type="Script" path="res://scenes/ability/ice_bow_controller/ice_bow_controller.gd" id="1_script"]
-[ext_resource type="PackedScene" uid="uid://c1c3b4d5e6f7g8h9" path="res://scenes/ability/ice_bow/ice_bow.tscn" id="2_scene"]
+[ext_resource type="Script" uid="uid://b20olig7fkncx" path="res://scenes/ability/ice_bow_controller/ice_bow_controller.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://wfeh0mtj7bfg" path="res://scenes/ability/ice_bow/ice_bow.tscn" id="2_scene"]
 
 [node name="IceBowController" type="Node"]
 script = ExtResource("1_script")

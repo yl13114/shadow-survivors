@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://vqjgdqb3t2ju"]
 
-[ext_resource type="Script" path="res://scenes/ui/end_screen.gd" id="1_qgnjn"]
+[ext_resource type="Script" uid="uid://ntaxhxhbpa6m" path="res://scenes/ui/end_screen.gd" id="1_qgnjn"]
 [ext_resource type="PackedScene" uid="uid://dumjej53vmw4d" path="res://scenes/ui/sound_button.tscn" id="2_4hyb7"]
 [ext_resource type="AudioStream" uid="uid://ck1x181q75skj" path="res://assets/audio/victory.ogg" id="2_g1py2"]
 [ext_resource type="AudioStream" uid="uid://bgkena6bp47aa" path="res://assets/audio/defeat.ogg" id="3_oi2p5"]
@@ -56,9 +56,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yg6vw"]
 _data = {
-"RESET": SubResource("Animation_adju6"),
-"in": SubResource("Animation_ynt2q"),
-"out": SubResource("Animation_c5l1u")
+&"RESET": SubResource("Animation_adju6"),
+&"in": SubResource("Animation_ynt2q"),
+&"out": SubResource("Animation_c5l1u")
 }
 
 [node name="EndScreen" type="CanvasLayer"]
@@ -121,7 +121,7 @@ theme_type_variation = &"BlueOutlineLabel"
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 0
 theme_override_font_sizes/font_size = 32
-text = "Victory"
+text = "胜利"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -129,7 +129,7 @@ vertical_alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 theme_type_variation = &"BlueOutlineLabel"
-text = "You won!"
+text = "恭喜通关！"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -137,9 +137,9 @@ layout_mode = 2
 [node name="ContinueButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" instance=ExtResource("2_4hyb7")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Continue"
+text = "继续"
 
 [node name="QuitButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" instance=ExtResource("2_4hyb7")]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Quit to Menu"
+text = "返回主菜单"
